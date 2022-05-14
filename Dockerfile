@@ -12,7 +12,7 @@ USER projects
 
 COPY . .
 
-ENV GOPATH="$HOME/go"
-ENV PATH="$PATH:$GOPATH/bin"
+# ENV GOPATH="$HOME/go"
+# ENV PATH="$PATH:$GOPATH/bin"
 RUN go install -v ./...
-RUN go install golang.org/x/tools/cmd/goimports@latest
+# RUN go install golang.org/x/tools/cmd/goimports@latest
